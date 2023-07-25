@@ -10,33 +10,34 @@
 
 public class Reto1 {
 
-    private Integer i;
 
-    void function() {
+    public static void main(String[] args) {
+        var i = 1;
+        var contAmbos = 0;
+        var contTres = 0;
+        var contCinco = 0;
+        var contNoDiv = 0;
         for (i = 1; i <= 100; i++) {
-            if (divisiblePor3(i)) {
-                System.out.println("fizz");
-            } else if (divisiblePor5(i)) {
-                System.out.println("buzz");
-            } else if (divisiblePor3y5(i)) {
+            if (i % 3 == 0 && i % 5 == 0) {
+                contAmbos ++;
                 System.out.println("fizzbuzz");
+            } else if (i % 5 == 0) {
+                contCinco ++;
+                System.out.println("buzz");
+            } else if (i % 3 == 0) {
+                contTres ++;
+                System.out.println("fizz");
+            } else {
+                contNoDiv ++;
+                System.out.println(i);
 
             }
 
         }
-    }
-
-    private boolean divisiblePor3y5(Integer i) {
-        return (i % 3) == 0 && (i % 5) == 0;
-    }
-
-    private boolean divisiblePor5(Integer i) {
-        return (i % 5) == 0;
-    }
-
-    private boolean divisiblePor3(Integer i) {
-        return (i % 3) == 0;
+        System.out.println("Cant. Multiplo de 3 = " + contTres);
+        System.out.println("Cant. Multiplo de 5 = " + contCinco);
+        System.out.println("Cant. Multiplo de 3 y 5 = " + contAmbos);
+        System.out.println("Cant. sin Multiplo = " + contNoDiv);
     }
 }
-
 
