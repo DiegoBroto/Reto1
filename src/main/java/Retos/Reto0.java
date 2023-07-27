@@ -1,4 +1,4 @@
-///*
+package Retos;///*
 // * Escribe un programa que muestre por consola (con un print) los
 // * números de 1 a 100 (ambos incluidos y con un salto de línea entre
 // * cada impresión), sustituyendo los siguientes:
@@ -12,12 +12,13 @@ public class Reto0 {
 
 
     public static void main(String[] args) {
-        var i = 1;
-        var contAmbos = 0;
-        var contTres = 0;
-        var contCinco = 0;
-        var contNoDiv = 0;
-        for (i = 1; i <= 100; i++) {
+
+        int contAmbos = 0;
+        int contTres = 0;
+        int contCinco = 0;
+        int contNoDiv = 0;
+
+        for (int i = 1; i <= 100; i ++) {
             if (i % 3 == 0 && i % 5 == 0) {
                 contAmbos ++;
                 System.out.println("fizzbuzz");
