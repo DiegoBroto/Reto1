@@ -7,10 +7,10 @@ public class RRR1 {
     public static void main(String[] args) {
         //public void CualesEstanDentro(String[] args) {
 
-            String[] a1 = {"arp", "live", "strong"};
-            String[] a2 = {"lively", "alive", "harp", "sharp", "armstrong"};
-       // String[] a1 = {"tarp", "mice", "bull"};
-       // String[] a2 = {"lively", "alive", "harp", "sharp", "armstrong"};
+       //     String[] a1 = {"arp", "live", "strong"};
+       //     String[] a2 = {"lively", "alive", "harp", "sharp", "armstrong"};
+        String[] a1 = {"tarp", "mice", "bull"};
+        String[] a2 = {"lively", "alive", "harp", "sharp", "armstrong"};
 
         StringBuilder sBuilder = new StringBuilder();
 
